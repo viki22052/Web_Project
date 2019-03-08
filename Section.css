@@ -1,0 +1,129 @@
+body{
+  width: 100wh;
+	height: 90vh;
+	color: #fff;
+  background: linear-gradient(308deg, #EE7752, #E73C7E, #38adae, #cd295a);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  display: flex;
+    
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+html, body{
+
+  height: 100%;
+
+}
+
+h1{
+  margin: 0 auto;
+  text-align: left;;
+  font-size: 550%;
+  color: white;
+  text-shadow: 10px 4px 40px whitesmoke;
+
+}
+
+    a {
+      text-decoration: none;
+
+    }
+
+    a:hover{
+      text-decoration: none;
+    }
+  
+
+    .back-sect-1{
+      background-image: url("nature.jpg");
+      margin: 0 auto;
+      margin-top: 4%;
+    }
+
+    .back-sect-2{
+      background-image: url("landscape.jpg");
+      margin: 0 auto;
+      margin-top: 4%;
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 150%;
+      width: 70%;
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      color: white;
+      box-shadow: 5px 5px 25px #000;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 1s;
+      background-repeat: no-repeat;
+    }
+     .box_blurb {
+      opacity: 1;
+      transform: translateX(45px);
+      transition: opacity 0.5s 2s, transform 0.5s 0.5s;
+      
+    }
+     .rect_blurb {
+      opacity: 0;
+      transform: translateX(500px);
+      transition: opacity 0.5s 1s, transform 0.5s 1s;
+      
+    }
+
+    .box:hover {
+      width: 100%;
+      background-color: orange;
+      box-shadow: -5px 5px 25px #000;
+    }
+    
+    .box:hover .box_blurb {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    .box:hover .rect_blurb {
+      opacity: 1;
+      transform: translateX(-100px);
+    }
